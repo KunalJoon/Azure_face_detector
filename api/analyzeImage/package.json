@@ -1,0 +1,8 @@
+{
+  "name": "analyzeImage",
+  "version": "1.0.0",
+  "dependencies": {
+    "@azure-rest/ai-vision-image-analysis": "latest",
+    "@azure/core-auth": "latest"
+  }
+}

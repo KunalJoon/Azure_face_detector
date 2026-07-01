@@ -1,0 +1,1 @@
+async function analyzeImage(){const f=document.getElementById('imageFile').files[0];if(!f){alert('Select image');return;}preview.src=URL.createObjectURL(f);const fd=new FormData();fd.append('image',f);const r=await fetch('/api/analyzeImage',{method:'POST',body:fd});const d=await r.json();result.innerHTML='<pre>'+JSON.stringify(d,null,2)+'</pre>';}
